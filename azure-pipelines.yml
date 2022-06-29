@@ -14,6 +14,7 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+    mavenOptions: '-Dmaven.repo.local=$(Systewm.DefaultWorkingDirectory)'
 - task: CmdLine@2
   inputs:
     script: |
